@@ -1,0 +1,108 @@
+/* Reset some basic elements */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial, sans-serif';
+}
+
+body {
+    background: whitesmoke;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.heading {
+    color:  #4CAF50;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 15s linear infinite;
+}
+
+.description {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1rem 0 2rem;
+}
+
+.service-category {
+    margin-bottom: 2rem;
+}
+
+.service-category h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #007BFF;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background: #4CAF50;
+    padding: 1.5rem;
+    margin: 1rem;
+    flex: 0 1 30%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 20px rgba(0,0,0,0.1);
+}
+
+.service-item .icon {
+    margin-bottom: 1rem;
+}
+
+.service-item .icon img {
+    max-width: 100px;
+    transition: transform 0.5s;
+}
+
+.service-item:hover .icon img {
+    transform: rotate(360deg);
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.service-item p {
+    font-size: 1rem;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+@media (max-width: 768px) {
+    .service-item {
+        flex: 0 1 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-item {
+        flex: 0 1 100%;
+    }
+}

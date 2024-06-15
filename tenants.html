@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Tenant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Add New Tenant</h2>
+        <form action="submit_tenant.php" method="post">
+            <label for="tenant_name">Tenant Name:</label>
+            <input type="text" id="tenant_name" name="tenant_name" required>
+            
+            <label for="room_number">Room Number:</label>
+            <input type="text" id="room_number" name="room_number" required>
+            
+            <label for="room_status">Room Status:</label>
+            <select id="room_status" name="room_status">
+                <option value="Occupied">Occupied</option>
+                <option value="Vacant">Vacant</option>
+            </select>
+            
+            <label for="monthly_rent">Monthly Rent:</label>
+            <input type="text" id="monthly_rent" name="monthly_rent" required>
+            
+            <label for="monthly_payment">Monthly Payment:</label>
+            <input type="text" id="monthly_payment" name="monthly_payment">
+            
+            <label for="house_deposit">House Deposit:</label>
+            <input type="text" id="house_deposit" name="house_deposit">
+            
+            <label for="balances_per_month">Balances per Month:</label>
+            <input type="text" id="balances_per_month" name="balances_per_month">
+            
+            <label for="maintenance_fees">Maintenance Fees:</label>
+            <input type="text" id="maintenance_fees" name="maintenance_fees">
+            
+            <label for="total_arrears">Total Arrears:</label>
+            <input type="text" id="total_arrears" name="total_arrears">
+
+            <button type="submit">Save</button>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="tenants.js"></script>
+</body>
+</html>

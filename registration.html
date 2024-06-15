@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="registration-container">
+        <form id="registrationForm" action="register.php" method="POST">
+            <h2>Register</h2>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="user_id">User ID</label>
+                <input type="text" id="user_id" name="user_id" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Register</button>
+            <p class="error-message" id="error-message"></p>
+        </form>
+        <p class="login-link">Already registered? <a href="login.html">Click to login</a></p>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
+

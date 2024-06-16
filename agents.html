@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agents Page</title>
+    <link rel="stylesheet" href="agents.css">
+</head>
+<body>
+    <header>
+        <h1>Company Name</h1>
+    </header>
+    <div class="container">
+        <form id="agentForm" method="POST" action="addagent.php">
+            <div class="form-group">
+                <label for="agentName">Agent's Name:</label>
+                <input type="text" id="agentName" name="agentName" required>
+            </div>
+            <div class="form-group">
+                <label for="plotNumber">Plot Number:</label>
+                <input type="text" id="plotNumber" name="plotNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="plotMonthlyRent">Plot Monthly Rent:</label>
+                <input type="number" id="plotMonthlyRent" name="plotMonthlyRent" required>
+            </div>
+            <div class="form-group">
+                <label for="monthlyIncome">Monthly Income:</label>
+                <input type="number" id="monthlyIncome" name="monthlyIncome" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="maintenanceFees">Maintenance Fees:</label>
+                <input type="number" id="maintenanceFees" name="maintenanceFees" required>
+            </div>
+            <div class="form-group">
+                <label for="transactionCost">Transaction Cost:</label>
+                <input type="number" id="transactionCost" name="transactionCost" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <table id="agentsTable">
+            <thead>
+                <tr>
+                    <th>Agent's Name</th>
+                    <th>Plot Number</th>
+                    <th>Plot Monthly Rent</th>
+                    <th>Monthly Income</th>
+                    <th>Date</th>
+                    <th>Maintenance Fees</th>
+                    <th>Transaction Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="agents.js"></script>
+</body>
+</html>
+

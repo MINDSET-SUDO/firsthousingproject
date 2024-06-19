@@ -35,4 +35,5 @@ $conn->close();
 
 // JSON response
 echo json_encode($totals);
+
 ?>

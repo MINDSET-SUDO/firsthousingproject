@@ -14,3 +14,13 @@ function calculateValues() {
     document.getElementById('outputBalancesPerMonth').textContent = balancesPerMonth.toFixed(2);
     document.getElementById('outputMonthlyIncome').textContent = monthlyIncome.toFixed(2);
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.getElementById('toggle-sidebar');
+    const sidebar = document.getElementById('sidebar');
+
+    toggleButton.addEventListener('click', () => {
+        sidebar.classList.toggle('active');
+    });
+});
+

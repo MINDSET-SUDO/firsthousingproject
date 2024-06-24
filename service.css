@@ -6,9 +6,13 @@ body, h1, h2, h3, p, ul {
 }
 
 body {
-    background: whitesmoke;
+    background-image:url(pexels-pixabay-260922.jpg);
     color: #333;
     line-height: 1.6;
+    background-position:cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    ba
 }
 
 .container {
@@ -53,7 +57,7 @@ body {
 }
 
 .service-item {
-    background: #4CAF50;
+    background: floralwhite;
     padding: 1.5rem;
     margin: 1rem;
     flex: 0 1 30%;
